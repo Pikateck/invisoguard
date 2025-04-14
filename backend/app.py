@@ -1,8 +1,8 @@
 from flask import Flask, render_template
 import os
 
-# Tells Flask exactly where the templates folder is
-app = Flask(__name__, template_folder='templates')
+# This tells Flask to look inside backend/templates by default
+app = Flask(__name__, template_folder="templates")
 
 @app.route("/")
 def homepage():
