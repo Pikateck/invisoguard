@@ -1,7 +1,8 @@
 from flask import Flask, render_template
 import os
 
-app = Flask(__name__)
+# Tells Flask exactly where the templates folder is
+app = Flask(__name__, template_folder='templates')
 
 @app.route("/")
 def homepage():
