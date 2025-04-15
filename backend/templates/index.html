@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InvisoGuard</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script>
+    async function revealTrace() {
+        document.getElementById('loader').style.display = 'block';
+        const response = await fetch('/trace', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: 'video_url=' + document.getElementById('video_url').value
+        });
+        const data = await response.json();
+        document.getElementById('loader').style.display = 'none';
+        document.getElementById('result').innerHTML = `
+            <p><strong>Video URL:</strong> ${data.video_url}</p>
+            <p><strong>Location:</strong> ${data.location}</p>
+            <p><strong>Device ID:</strong> ${data.device_id}</p>
+            <p><strong>Token Used:</strong> ${data.token_usage}</p>
+            <button onclick="downloadReport()">Download Trace Report</button>
+        `;
+    }
+
+    function downloadReport() {
+        alert("Mock trace report downloaded.");
+    }
+    </script>
+</head>
+<body>
+    <h1>InvisoGuard Trace</h1>
+    <input type="text" id="video_url" placeholder="Paste video URL here">
+    <button onclick="revealTrace()">Reveal</button>
+    <div id="loader" style="display:none;">Processing...</div>
+    <div id="result"></div>
+</body>
+</html>
