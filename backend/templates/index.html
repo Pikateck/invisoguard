@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InvisoGuard Trace</title>
+    <link rel="icon" href="/static/logo.png" type="image/png">
+    <style>
+        body {
+            background-color: #000;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 60px;
+        }
+        .logo {
+            width: 100px;
+        }
+        .trace-result {
+            background: #111;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 30px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <img src="/static/logo.png" class="logo" alt="InvisoGuard Logo">
+    <h1>InvisoGuard Trace</h1>
+    <input type="text" id="video_url" placeholder="Paste video URL here" style="width:300px;">
+    <button onclick="runTrace()">Reveal</button>
+    <div id="result" class="trace-result" style="display:none;"></div>
+    <script>
+        function runTrace() {
+            const url = document.getElementById('video_url').value;
+            fetch('/trace', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({ video_url: url })
+            })
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById('result').style.display = 'block';
+                document.getElementById('result').innerHTML = `
+                    <strong>Location:</strong> ${data.location}<br>
+                    <strong>GPS:</strong> ${data.gps}<br>
+                    <strong>Device:</strong> ${data.device}<br>
+                    <strong>Serial:</strong> ${data.serial}<br>
+                    <strong>Time:</strong> ${data.timestamp}<br>
+                    <strong>Uploader:</strong> ${data.uploader}<br>
+                    <strong>Handle:</strong> ${data.social_handle}<br>
+                    <strong>Face Match:</strong> ${data.face_match}<br>
+                    <a href="${data.street_view}" target="_blank">Google Street View</a>
+                `;
+            });
+        }
+    </script>
+</body>
+</html>
