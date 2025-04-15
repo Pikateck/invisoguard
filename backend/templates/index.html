@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>InvisoGuard Trace</title>
+</head>
+<body style="background-color:black; color:white; font-family:sans-serif;">
+    <h1>InvisoGuard Trace</h1>
+    <form method="POST">
+        <input type="text" name="video_url" placeholder="Paste video URL here" style="width:300px;">
+        <button type="submit">Reveal</button>
+    </form>
+    {% if trace_data %}
+    <div style="margin-top:20px;">
+        <strong>Video URL:</strong> {{ trace_data.video_url }}<br>
+        <strong>Location:</strong> {{ trace_data.location }}<br>
+        <strong>Device:</strong> {{ trace_data.device }}<br>
+        <strong>Serial:</strong> {{ trace_data.serial }}<br>
+        <strong>Recorded By:</strong> {{ trace_data.recorder }}<br>
+        <strong>Timestamp:</strong> {{ trace_data.timestamp }}
+    </div>
+    {% endif %}
+</body>
+</html>
