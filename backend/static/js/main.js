@@ -1,1 +1,0 @@
-// Token counter, AJAX trace triggers, map hooks
