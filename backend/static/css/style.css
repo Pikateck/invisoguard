@@ -1,0 +1,7 @@
+
+body { font-family: Arial; background: #111; color: white; padding: 30px; }
+h1 { color: #e74c3c; }
+form input, button { padding: 10px; margin: 10px; display: block; }
+button { background: #e74c3c; color: white; border: none; cursor: pointer; }
+table { background: #222; color: white; border-collapse: collapse; width: 100%; margin-top: 20px; }
+th, td { border: 1px solid #555; padding: 8px; }
