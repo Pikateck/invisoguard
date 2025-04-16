@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InvisoGuard – Reveal the Truth</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f3f4f6;
+      color: #111827;
+    }
+    .header {
+      background-color: #1f2937;
+      color: white;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.3rem;
+    }
+    .header p {
+      font-size: 1.1rem;
+      color: #d1d5db;
+    }
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    }
+    .upload-box {
+      text-align: center;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: 1px solid #cbd5e0;
+      margin: 1rem 0;
+    }
+    button {
+      background-color: #dc2626;
+      color: white;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .trace-result {
+      margin-top: 30px;
+      background: #f9fafb;
+      border-radius: 8px;
+      padding: 1rem;
+      border: 1px solid #e5e7eb;
+    }
+    .trace-result h2 {
+      color: #16a34a;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>InvisoGuard</h1>
+    <p>Reveal the Truth Behind Every Video</p>
+  </div>
+
+  <div class="container">
+    <div class="upload-box">
+      <h2>Paste a Video Link</h2>
+      <input type="text" placeholder="e.g. YouTube, LinkedIn, X, etc..." />
+      <button onclick="showResult()">Trace Now</button>
+    </div>
+
+    <div class="trace-result" id="resultBox" style="display:none;">
+      <h2>🎯 Trace Verified – Source Identified</h2>
+      <p><strong>Location:</strong> Ghaziabad, Uttar Pradesh, India</p>
+      <p><strong>Recorded At:</strong> 03-Apr-2025, 4:18 PM IST</p>
+      <p><strong>Device:</strong> Samsung Galaxy A53</p>
+      <p><strong>Trace ID:</strong> TRACE-58C2-XF91</p>
+      <p><strong>Name:</strong> Rohit Sharma</p>
+      <p><strong>Phone:</strong> +91-98123-45678</p>
+      <p><strong>Email:</strong> rohit123@gmail.com</p>
+      <p><strong>SIM ID:</strong> Jio-IND-8991******5634</p>
+      <p><strong>App ID:</strong> @RohitS_Official</p>
+    </div>
+  </div>
+
+  <script>
+    function showResult() {
+      document.getElementById('resultBox').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
