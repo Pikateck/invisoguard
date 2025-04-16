@@ -1,0 +1,8 @@
+flask
+flask-login
+gunicorn
+opencv-python
+pymediainfo
+hachoir
+reportlab
+requests
