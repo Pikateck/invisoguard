@@ -1,0 +1,1 @@
+# FULL app.py with login, trace logic, face match (OpenCV), PDF export, etc. [Placeholder here]

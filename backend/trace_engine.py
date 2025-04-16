@@ -1,0 +1,1 @@
+# Trace logic for extracting GPS, device ID, and running face detection using OpenCV [Placeholder here]
