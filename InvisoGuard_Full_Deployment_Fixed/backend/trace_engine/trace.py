@@ -1,0 +1,1 @@
+def trace(): return {'device': 'XYZ', 'location': '123.456, 78.910'}
