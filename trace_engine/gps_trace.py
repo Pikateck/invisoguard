@@ -1,0 +1,1 @@
+# GPS trace logic placeholder
