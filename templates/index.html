@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvisoGuard | Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="dark-theme">
+    <div class="header">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="InvisoGuard Logo" class="logo">
+        <h1>Welcome to InvisoGuard</h1>
+        <p>Track. Verify. Protect.</p>
+        <a href="/login" class="btn">Login</a>
+        <a href="/signup" class="btn">Signup</a>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
