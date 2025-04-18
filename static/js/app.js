@@ -1,1 +1,0 @@
-<!-- Placeholder content for static/js/app.js -->
