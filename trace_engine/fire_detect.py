@@ -1,1 +1,0 @@
-# Placeholder logic for fire_detect.py

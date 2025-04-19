@@ -1,1 +1,0 @@
-# Placeholder logic for voice_detect.py

@@ -1,1 +1,0 @@
-# Placeholder logic for face_detect.py
