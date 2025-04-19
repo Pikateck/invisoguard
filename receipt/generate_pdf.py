@@ -1,0 +1,1 @@
+# Placeholder logic for generate_pdf.py
