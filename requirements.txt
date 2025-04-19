@@ -1,5 +1,0 @@
-flask==3.1.0
-gunicorn==23.0.0
-flask-login==0.6.3
-requests
-opencv-python
