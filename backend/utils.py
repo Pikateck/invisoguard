@@ -1,1 +1,0 @@
-# Simulated login and metadata utility functions

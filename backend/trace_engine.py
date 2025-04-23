@@ -1,1 +1,0 @@
-# Metadata extraction and PDF generation
