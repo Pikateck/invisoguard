@@ -1,0 +1,7 @@
+flask==2.2.5
+gunicorn
+opencv-python
+face_recognition
+numpy
+reportlab
+requests
