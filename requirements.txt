@@ -1,5 +1,5 @@
 flask==2.2.5
-gunicorn==23.0.0
+gunicorn==20.1.0
 opencv-python
 face_recognition
 numpy
