@@ -1,1 +1,0 @@
-console.log('Loading spinner script');
