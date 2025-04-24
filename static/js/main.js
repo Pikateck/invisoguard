@@ -1,1 +1,0 @@
-console.log('Faredown UI Loaded');
