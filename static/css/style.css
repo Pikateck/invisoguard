@@ -1,0 +1,4 @@
+body { font-family: Arial; background: #f0f0f0; color: #333; margin: 0; }
+header.hero { background: #222; color: #fff; padding: 20px; text-align: center; }
+nav ul { list-style: none; padding: 0; display: flex; justify-content: center; gap: 15px; }
+nav a { color: #fff; text-decoration: none; font-weight: bold; }
