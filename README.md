@@ -13,3 +13,6 @@
 - Backend: Render (Docker deployment)
 
 Includes SQLite, face recognition, and secure trace logic.
+
+git commit --allow-empty -m "Trigger build"
+git push origin main
