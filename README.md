@@ -14,5 +14,8 @@
 
 Includes SQLite, face recognition, and secure trace logic.
 
+### To trigger a GitHub Actions build:
+```bash
 git commit --allow-empty -m "Trigger build"
 git push origin main
+```
