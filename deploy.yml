@@ -22,4 +22,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: docker.io/zubin/invisoguard:latest
+          tags: docker.io/zubin/invisoguard:latest 
